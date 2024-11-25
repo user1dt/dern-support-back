@@ -1,0 +1,39 @@
+.Nav-container{
+/* width: 100vw; */
+height: 80px;
+display: flex;
+align-items: center;
+background-color: #051529;
+justify-content: space-between;
+position: relative;
+
+}
+
+.logo{
+    height: 60px;
+    width: 100px;
+    padding: 10px;
+    
+}
+
+.nav-ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .nav-li {
+    display: block;
+    
+    text-align: center;
+    padding: 14px 16px;
+    
+   }
+   .nav-li a{
+    color:#9E063B ;
+   }
+  
+  /* .a :hover {
+    background-color: #111;
+  } */

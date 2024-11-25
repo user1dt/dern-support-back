@@ -1,0 +1,35 @@
+.repair-form {
+  padding: 20px;
+  background-color: rgb(219, 191, 245);
+  opacity: 0.9;
+  height: 100vh;
+  /* width: 79vw; */
+  }
+.repair-input{
+  width: 50%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  }
+
+.repair-textarea {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  border: 2px solid #110f0f;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  padding: 10px 20px;
+  background: #9e063b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: #f7095c;
+} */
