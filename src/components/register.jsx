@@ -17,7 +17,8 @@ function Register() {
     try {
       const response = await axios.post('http://localhost:3000/user/register', {name, email, phone, password});
     console.log("Registration successful:", response.data);
-    localStorage.setItem("token", response.data.token);
+    localStorage.setItem("token", response.data.accessToken);
+    navigate("/login");
       
       
     } catch (err) {

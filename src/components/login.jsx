@@ -9,6 +9,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import Navbar from "./navbar/navbar";
 import axios from "axios";
+// import { jwtDecode } from "jsonwebtoken"
 
 function Login() {
   const navigate = useNavigate();
@@ -23,8 +24,10 @@ function Login() {
     try {
       const response = await axios.post('http://localhost:3000/user/login', {  email, password });
       console.log("Login successful:", response.data);
-      localStorage.setItem("token", response.data.token);
-      navigate("/dashboard"); 
+      localStorage.setItem("Acesstoken", response.data.accessToken);
+    
+    navigate("/dashboard");
+    
    
     } catch (error) {
       setError(error.response.data.msg || 'An error occurred during login');

@@ -5,7 +5,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 // import { GrHostMaintenance } from "react-icons/gr";
 
 
-const Sidebar = () => {
+const Sidebar = ({role}) => {
   const navigate = useNavigate()
 
   const adminpannal =()=>{
@@ -18,14 +18,23 @@ const Sidebar = () => {
     <div>
        <div className="sidebar">
       
-      <ul>
+      {
+        role ==="ADMIN" && 
+        <ul>
         
-        <li onClick={repairform}>Repair Request </li>
+        
         {/* <li>Spare Part</li> */}
         <li onClick={adminpannal}>Repair Management</li>
+        
         {/* <li>User List</li>
         <li>LogOut</li> */}
       </ul>
+      }
+      <ul>
+         <li onClick={repairform}>Repair Request </li>
+      </ul>
+      
+    
     </div>
     
     </div>

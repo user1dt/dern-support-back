@@ -3,7 +3,6 @@ import Navbar from "../navbar/navbar";
 import "./homepage.css";
 import frontimg from "../../assets/frontimg.png";
 import brand from "../../assets/brand.png";
-import dell from "../../assets/dell.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Homepage  = () => {
@@ -68,7 +67,7 @@ const Homepage  = () => {
 
           <div className="service">
             <h3>Laptop Won't Turn On</h3>
-            <p>No power, no lights, or no display</p>
+            <p>No power, no lights or no display</p>
           </div>
           <div className="service">
             <h3>Cracked Screen</h3>
